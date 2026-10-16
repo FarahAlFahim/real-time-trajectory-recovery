@@ -1,0 +1,294 @@
+{
+  "schema_version": 2,
+  "repair_agent": "Mini-SWE-Agent V2",
+  "model": "gpt_5_mini",
+  "dataset_name": "SWE-bench Lite",
+  "metric": "pass@1",
+  "expected_total": 300,
+  "variants": [
+    "original",
+    "ablation_direction",
+    "ablation_direction_consistency",
+    "realtime_recovery"
+  ],
+  "per_variant": {
+    "original": {
+      "label": "Original",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 123,
+      "overall_pass_at_1": 0.41
+    },
+    "ablation_direction": {
+      "label": "Direction Recovery",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 147,
+      "overall_pass_at_1": 0.49
+    },
+    "ablation_direction_consistency": {
+      "label": "Direction Recovery + Edit Consistency",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 168,
+      "overall_pass_at_1": 0.56
+    },
+    "realtime_recovery": {
+      "label": "Full TrajRec",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 183,
+      "overall_pass_at_1": 0.61
+    }
+  },
+  "per_repository": {
+    "astropy__astropy": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        },
+        "ablation_direction": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        },
+        "realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        }
+      }
+    },
+    "django__django": {
+      "total_instances": 114,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 58,
+          "pass_at_1": 0.5087719298245614
+        },
+        "ablation_direction": {
+          "resolved_instances": 69,
+          "pass_at_1": 0.6052631578947368
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 76,
+          "pass_at_1": 0.6666666666666666
+        },
+        "realtime_recovery": {
+          "resolved_instances": 81,
+          "pass_at_1": 0.7105263157894737
+        }
+      }
+    },
+    "matplotlib__matplotlib": {
+      "total_instances": 23,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 10,
+          "pass_at_1": 0.43478260869565216
+        },
+        "ablation_direction": {
+          "resolved_instances": 13,
+          "pass_at_1": 0.5652173913043478
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 14,
+          "pass_at_1": 0.6086956521739131
+        },
+        "realtime_recovery": {
+          "resolved_instances": 14,
+          "pass_at_1": 0.6086956521739131
+        }
+      }
+    },
+    "mwaskom__seaborn": {
+      "total_instances": 4,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.25
+        },
+        "ablation_direction": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.5
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.5
+        },
+        "realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.75
+        }
+      }
+    },
+    "pallets__flask": {
+      "total_instances": 3,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        },
+        "ablation_direction": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        },
+        "realtime_recovery": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        }
+      }
+    },
+    "psf__requests": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.3333333333333333
+        },
+        "ablation_direction": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 6,
+          "pass_at_1": 1.0
+        },
+        "realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 1.0
+        }
+      }
+    },
+    "pydata__xarray": {
+      "total_instances": 5,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.2
+        },
+        "ablation_direction": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        },
+        "realtime_recovery": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        }
+      }
+    },
+    "pylint-dev__pylint": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.16666666666666666
+        },
+        "ablation_direction": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.16666666666666666
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.16666666666666666
+        },
+        "realtime_recovery": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.3333333333333333
+        }
+      }
+    },
+    "pytest-dev__pytest": {
+      "total_instances": 17,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.17647058823529413
+        },
+        "ablation_direction": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.17647058823529413
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.29411764705882354
+        },
+        "realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.29411764705882354
+        }
+      }
+    },
+    "scikit-learn__scikit-learn": {
+      "total_instances": 23,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 11,
+          "pass_at_1": 0.4782608695652174
+        },
+        "ablation_direction": {
+          "resolved_instances": 12,
+          "pass_at_1": 0.5217391304347826
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 14,
+          "pass_at_1": 0.6086956521739131
+        },
+        "realtime_recovery": {
+          "resolved_instances": 14,
+          "pass_at_1": 0.6086956521739131
+        }
+      }
+    },
+    "sphinx-doc__sphinx": {
+      "total_instances": 16,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 8,
+          "pass_at_1": 0.5
+        },
+        "ablation_direction": {
+          "resolved_instances": 10,
+          "pass_at_1": 0.625
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 10,
+          "pass_at_1": 0.625
+        },
+        "realtime_recovery": {
+          "resolved_instances": 10,
+          "pass_at_1": 0.625
+        }
+      }
+    },
+    "sympy__sympy": {
+      "total_instances": 77,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 25,
+          "pass_at_1": 0.3246753246753247
+        },
+        "ablation_direction": {
+          "resolved_instances": 27,
+          "pass_at_1": 0.35064935064935066
+        },
+        "ablation_direction_consistency": {
+          "resolved_instances": 35,
+          "pass_at_1": 0.45454545454545453
+        },
+        "realtime_recovery": {
+          "resolved_instances": 41,
+          "pass_at_1": 0.5324675324675324
+        }
+      }
+    }
+  }
+}

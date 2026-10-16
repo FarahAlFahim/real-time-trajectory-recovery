@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "repair_agent": "Mini-SWE-Agent V2",
+  "model": "gpt_5_mini",
+  "dataset_name": "SWE-bench Pro",
+  "metric": "pass@1",
+  "expected_total": 100,
+  "variants": [
+    "original",
+    "realtime_recovery"
+  ],
+  "per_variant": {
+    "original": {
+      "label": "Original",
+      "total_evaluated": 100,
+      "total_resolved_at_1": 53,
+      "overall_pass_at_1": 0.53
+    },
+    "realtime_recovery": {
+      "label": "Full TrajRec",
+      "total_evaluated": 100,
+      "total_resolved_at_1": 66,
+      "overall_pass_at_1": 0.66
+    }
+  },
+  "per_repository": {
+    "ansible__ansible": {
+      "total_instances": 13,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 6,
+          "pass_at_1": 0.46153846153846156
+        },
+        "realtime_recovery": {
+          "resolved_instances": 9,
+          "pass_at_1": 0.6923076923076923
+        }
+      }
+    },
+    "element-hq__element-web": {
+      "total_instances": 8,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.625
+        },
+        "realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.625
+        }
+      }
+    },
+    "flipt-io__flipt": {
+      "total_instances": 12,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 6,
+          "pass_at_1": 0.5
+        },
+        "realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 0.5
+        }
+      }
+    },
+    "future-architect__vuls": {
+      "total_instances": 9,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.5555555555555556
+        },
+        "realtime_recovery": {
+          "resolved_instances": 7,
+          "pass_at_1": 0.7777777777777778
+        }
+      }
+    },
+    "gravitational__teleport": {
+      "total_instances": 11,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.36363636363636365
+        },
+        "realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 0.5454545454545454
+        }
+      }
+    },
+    "internetarchive__openlibrary": {
+      "total_instances": 13,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 11,
+          "pass_at_1": 0.8461538461538461
+        },
+        "realtime_recovery": {
+          "resolved_instances": 12,
+          "pass_at_1": 0.9230769230769231
+        }
+      }
+    },
+    "navidrome__navidrome": {
+      "total_instances": 8,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.5
+        },
+        "realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 0.75
+        }
+      }
+    },
+    "NodeBB__NodeBB": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.3333333333333333
+        },
+        "realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        }
+      }
+    },
+    "protonmail__webclients": {
+      "total_instances": 8,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.25
+        },
+        "realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.375
+        }
+      }
+    },
+    "qutebrowser__qutebrowser": {
+      "total_instances": 11,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 8,
+          "pass_at_1": 0.7272727272727273
+        },
+        "realtime_recovery": {
+          "resolved_instances": 9,
+          "pass_at_1": 0.8181818181818182
+        }
+      }
+    },
+    "tutao__tutanota": {
+      "total_instances": 1,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        },
+        "realtime_recovery": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        }
+      }
+    }
+  }
+}

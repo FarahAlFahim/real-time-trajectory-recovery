@@ -1,0 +1,184 @@
+{
+  "schema_version": 2,
+  "repair_agent": "Mini-SWE-Agent V2",
+  "model": "deepseek_flash",
+  "dataset_name": "SWE-bench Lite",
+  "metric": "pass@1",
+  "expected_total": 300,
+  "variants": [
+    "original",
+    "realtime_recovery"
+  ],
+  "per_variant": {
+    "original": {
+      "label": "Original",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 217,
+      "overall_pass_at_1": 0.7233333333333334
+    },
+    "realtime_recovery": {
+      "label": "Full TrajRec",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 225,
+      "overall_pass_at_1": 0.75
+    }
+  },
+  "per_repository": {
+    "astropy__astropy": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        },
+        "realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        }
+      }
+    },
+    "django__django": {
+      "total_instances": 114,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 92,
+          "pass_at_1": 0.8070175438596491
+        },
+        "realtime_recovery": {
+          "resolved_instances": 95,
+          "pass_at_1": 0.8333333333333334
+        }
+      }
+    },
+    "matplotlib__matplotlib": {
+      "total_instances": 23,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 19,
+          "pass_at_1": 0.8260869565217391
+        },
+        "realtime_recovery": {
+          "resolved_instances": 20,
+          "pass_at_1": 0.8695652173913043
+        }
+      }
+    },
+    "mwaskom__seaborn": {
+      "total_instances": 4,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.5
+        },
+        "realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.75
+        }
+      }
+    },
+    "pallets__flask": {
+      "total_instances": 3,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.3333333333333333
+        },
+        "realtime_recovery": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.3333333333333333
+        }
+      }
+    },
+    "psf__requests": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        },
+        "realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 1.0
+        }
+      }
+    },
+    "pydata__xarray": {
+      "total_instances": 5,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        },
+        "realtime_recovery": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        }
+      }
+    },
+    "pylint-dev__pylint": {
+      "total_instances": 6,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.6666666666666666
+        },
+        "realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.8333333333333334
+        }
+      }
+    },
+    "pytest-dev__pytest": {
+      "total_instances": 17,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 12,
+          "pass_at_1": 0.7058823529411765
+        },
+        "realtime_recovery": {
+          "resolved_instances": 12,
+          "pass_at_1": 0.7058823529411765
+        }
+      }
+    },
+    "scikit-learn__scikit-learn": {
+      "total_instances": 23,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 18,
+          "pass_at_1": 0.782608695652174
+        },
+        "realtime_recovery": {
+          "resolved_instances": 18,
+          "pass_at_1": 0.782608695652174
+        }
+      }
+    },
+    "sphinx-doc__sphinx": {
+      "total_instances": 16,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 9,
+          "pass_at_1": 0.5625
+        },
+        "realtime_recovery": {
+          "resolved_instances": 10,
+          "pass_at_1": 0.625
+        }
+      }
+    },
+    "sympy__sympy": {
+      "total_instances": 77,
+      "per_variant": {
+        "original": {
+          "resolved_instances": 48,
+          "pass_at_1": 0.6233766233766234
+        },
+        "realtime_recovery": {
+          "resolved_instances": 48,
+          "pass_at_1": 0.6233766233766234
+        }
+      }
+    }
+  }
+}

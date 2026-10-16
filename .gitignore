@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+mini_sweagent-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Local runs and evaluations (e.g. RESULTS_ROOT="results_trajrec/..."). The released
+# results/ directory is tracked and is not matched by this pattern.
+results_*/
+
+# Local binaries (e.g. bin/codex-linux-x86_64 for the Codex runner)
+bin/
+
+# API keys / secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Temporary files
+*.tmp
+*.bak

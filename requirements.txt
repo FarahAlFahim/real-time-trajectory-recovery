@@ -1,0 +1,19 @@
+# Python 3.11+ (evaluated with Python 3.12.3).
+
+# TrajRec reviewer and runners
+mini-swe-agent==2.1.0
+litellm==1.81.11
+tiktoken==0.12.0
+rich==14.3.2
+PyYAML==6.0.3
+
+# SWE-bench Lite evaluation (harness-style grading)
+swebench==4.1.0
+
+# Codex runner only: the Linux codex binary copied into each task container.
+# The Codex Python SDK (`openai_codex`) was installed from the OpenAI Codex
+# repository's sdk/python directory.
+openai-codex-cli-bin==0.153.4
+
+# Tests
+pytest

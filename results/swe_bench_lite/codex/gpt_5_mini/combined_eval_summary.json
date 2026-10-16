@@ -1,0 +1,184 @@
+{
+  "schema_version": 2,
+  "repair_agent": "Codex CLI",
+  "model": "gpt_5_mini",
+  "dataset_name": "SWE-bench Lite",
+  "metric": "pass@1",
+  "expected_total": 300,
+  "variants": [
+    "codex_original",
+    "codex_realtime_recovery"
+  ],
+  "per_variant": {
+    "codex_original": {
+      "label": "Codex Original",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 157,
+      "overall_pass_at_1": 0.5233333333333333
+    },
+    "codex_realtime_recovery": {
+      "label": "Codex + Full TrajRec",
+      "total_evaluated": 300,
+      "total_resolved_at_1": 174,
+      "overall_pass_at_1": 0.58
+    }
+  },
+  "per_repository": {
+    "astropy__astropy": {
+      "total_instances": 6,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.6666666666666666
+        }
+      }
+    },
+    "django__django": {
+      "total_instances": 114,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 67,
+          "pass_at_1": 0.5877192982456141
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 73,
+          "pass_at_1": 0.6403508771929824
+        }
+      }
+    },
+    "matplotlib__matplotlib": {
+      "total_instances": 23,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 14,
+          "pass_at_1": 0.6086956521739131
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 15,
+          "pass_at_1": 0.6521739130434783
+        }
+      }
+    },
+    "mwaskom__seaborn": {
+      "total_instances": 4,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.75
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.75
+        }
+      }
+    },
+    "pallets__flask": {
+      "total_instances": 3,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 0,
+          "pass_at_1": 0.0
+        }
+      }
+    },
+    "psf__requests": {
+      "total_instances": 6,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.6666666666666666
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 6,
+          "pass_at_1": 1.0
+        }
+      }
+    },
+    "pydata__xarray": {
+      "total_instances": 5,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 2,
+          "pass_at_1": 0.4
+        }
+      }
+    },
+    "pylint-dev__pylint": {
+      "total_instances": 6,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 1,
+          "pass_at_1": 0.16666666666666666
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 3,
+          "pass_at_1": 0.5
+        }
+      }
+    },
+    "pytest-dev__pytest": {
+      "total_instances": 17,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 4,
+          "pass_at_1": 0.23529411764705882
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 5,
+          "pass_at_1": 0.29411764705882354
+        }
+      }
+    },
+    "scikit-learn__scikit-learn": {
+      "total_instances": 23,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 16,
+          "pass_at_1": 0.6956521739130435
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 16,
+          "pass_at_1": 0.6956521739130435
+        }
+      }
+    },
+    "sphinx-doc__sphinx": {
+      "total_instances": 16,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 8,
+          "pass_at_1": 0.5
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 9,
+          "pass_at_1": 0.5625
+        }
+      }
+    },
+    "sympy__sympy": {
+      "total_instances": 77,
+      "per_variant": {
+        "codex_original": {
+          "resolved_instances": 35,
+          "pass_at_1": 0.45454545454545453
+        },
+        "codex_realtime_recovery": {
+          "resolved_instances": 38,
+          "pass_at_1": 0.4935064935064935
+        }
+      }
+    }
+  }
+}
